@@ -10,6 +10,7 @@ body {
     justify-content: flex-end;
     padding-right: 10px;
     padding: 10px 20px;
+    
 }
 
 .navlist{
@@ -20,6 +21,26 @@ body {
     color: #f8f8f8;
     gap: 30px;
     list-style-type: none;
+}
+.navlist a{
+    text-decoration: none;     /* removes underline */
+    color: inherit;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.navlist a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+.navlist a:hover::after {
+    width: 100%;
 }
 .profile_pic{
     width: 350px;
@@ -37,6 +58,7 @@ body {
     padding-top: 1px;
     height: calc(100vh - 190px);
     margin-top: 0;
+    gap: 25px;
 }
 
 .hero-text {
@@ -104,4 +126,42 @@ body {
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 1px;
   align-self: center; /* Centers the line between the two sides */
+}
+
+.social-button{
+    color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 0px;
+}
+
+.social-btn {
+    
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* space between icon and text */
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: transform 0.2s;
+    white-space: nowrap; /* keep icon + text on same line */
+}
+
+.social-btn img{
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+}
+
+.social-button a{
+    text-decoration: none;     /* removes underline */
+    color: inherit;
 }
