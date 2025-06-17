@@ -76,23 +76,20 @@ body {
   color: #9ca3af;
 }
 
-.about-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 100vh;
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the children */
+  height: 100vh;
+  gap: 40px; /* Add space between left/divider/right */
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-.left-about{
-    width: 47%;
-    padding: 40px;
-    
-}
-
-.right-about{
-    width: 47%;
-    padding: 40px;
+.left-about,
+.right-about {
+  width: 45%;
+  height: fit-content;
 }
 
 .left-h1{
@@ -122,10 +119,9 @@ body {
 
 .divider {
   width: 2px;
-  height: 400px; /* Set your desired line height */
+  height: 50%; /* Make it stretch almost fully, not fixed */
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 1px;
-  align-self: center; /* Centers the line between the two sides */
 }
 
 .social-button{
@@ -137,7 +133,6 @@ body {
 }
 
 .social-btn {
-    
     font-size: 20px;
     display: flex;
     align-items: center;
