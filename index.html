@@ -17,7 +17,7 @@
         <section id="hero" class="fade-in-section">
             <div class="hero">
             <img src="me.HEIC" alt="Aryan Goli" class="profile_pic">
-            <h1 class="hero-text">Hey, I am Aryan Goli;</h1>
+            <h1 class="hero-text"><span class="auto-type"></span></h1>
             <p class="hero-subtext">I am a programmer and I love to build stuff that solves real problems;</p>
             <div class="social-button">
                     <a href="https://github.com/aryanc0des" class="social-btn" target="_blank"><img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />GitHub;</a>
@@ -30,7 +30,7 @@
         <section id="about" class="fade-in-section">
             <div class="about-section">
                     <div class="left-about">
-                    <h1 class="left-h1">Hey there! - I'm Aryan</h1>
+                    <h1 class="left-h1"><span class="auto-type3"></span></h1>
                     <p class="left-p">A builder at heart, a programmer by passion, and someone who genuinely believes that technology should do something, not just look good.
 I don’t code just to code. I build to solve, to simplify, and sometimes — to surprise. I love turning random ideas into real things that actually make sense in the real world. Whether it’s a small tool that saves time or a system that fixes chaos, I’m always trying to create something useful.
 I believe in learning by building — not waiting to be “ready,” but getting my hands dirty and figuring it out along the way. Most days, you’ll find me deep in code, obsessed with the tiniest details, or staring at the screen like it owes me answers.
@@ -38,7 +38,7 @@ I’m still exploring, still learning, and still building — but one thing’s 
                 </div>
                 <div class="divider"></div>
                 <div class="right-about">
-                    <h1 class="right-h1">A Bit More About Me</h1>
+                    <h1 class="right-h1"><span class="auto-type4"></span></h1>
                     <ul class="bio-list">
                         <li>🎓 University: MIT ADT University;</li>
                         <li>🌆 City: Pune, Maharashtra;</li>
@@ -67,14 +67,14 @@ I’m still exploring, still learning, and still building — but one thing’s 
                 </div>
             </div>
             <div class="coming-soon">
-                    <h1>More Coming Soon, Stay Tuned....;</h1>
+                    <h1><span class="auto-type5"></span></h1>
                 </div>
         </section>
 
         <section id="contact" class="fade-in-section">
             <div class="contact-section">
                 <div class="contact-title">
-                    <h1>Let's Connect;</h1>
+                    <h1><span class="auto-type2"></span></h1>
                 </div>
                 <div class="contact-description">
                     <p>Have a gig, freelance work, internship, or a cool idea?<br />
@@ -82,16 +82,44 @@ I’m still exploring, still learning, and still building — but one thing’s 
                     </p>
                 </div>
                 <div class="contact-form">
-                    <form action="#">
-                        <input type="text" name="name" placeholder="Your Name;" required>
+                    <form id="contact-form" action="#">
+                        <input type="text" id = "name" name="name" placeholder="Your Name;" required>
                         <input type="email" id="email" name="email" placeholder="Enter Your Email;" required>
-                        <input type="text" name="subject" placeholder="Subject;" required>
-                        <textarea name="message" rows="5" placeholder="Your Message;" required></textarea>
+                        <input type="text" id = "subject" name="subject" placeholder="Subject;" required>
+                        <textarea name="message" id = "message" rows="5" placeholder="Your Message;" required></textarea>
                         <button type="submit">Send;</button>
                     </form>
                 </div>
             </div>
         </section>
         <script src="script.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings : ["Hey, I am Aryan Goli;"],
+                typeSpeed: 100,
+                loop: true
+            })
+            var typed2 = new Typed(".auto-type2", {
+                strings : ["Let's Connect;"],
+                typeSpeed: 100,
+                loop: true
+            })
+            var typed3 = new Typed(".auto-type3", {
+                strings : ["Hey there! - I'm Aryan;"],
+                typeSpeed: 100,
+                loop: true
+            })
+            var typed4 = new Typed(".auto-type4", {
+                strings : ["A Bit More About Me;"],
+                typeSpeed: 100,
+                loop: true
+            })
+            var typed5 = new Typed(".auto-type5", {
+                strings : ["More Coming Soon, Stay Tuned....;"],
+                typeSpeed: 100,
+                loop: true
+            })
+        </script>
     </body>
 </html>
