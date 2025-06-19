@@ -80,9 +80,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; /* Vertically center the children */
-  height: 100vh;
+  height: 80vh;
   gap: 40px; /* Add space between left/divider/right */
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -416,7 +416,7 @@ body {
         border-radius: 8px;
         background-color: transparent;
         color: #f8f8f8;
-        margin: 0; /* Remove side margins to prevent overflow */
+        margin: 12px auto; /* Remove side margins to prevent overflow */
         font-family: 'Fira Code', monospace;
         box-sizing: border-box;
     }
@@ -428,7 +428,7 @@ body {
 
 .fade-in-section{
     opacity: 0;
-    transform: translateY(150px);
+    transform: translateY(120px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -437,3 +437,20 @@ body {
     transform: translateY(0);
 }
 
+.project-title{
+    font-size: 28px;
+    color: #f8f8f8;
+    
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.about-title{
+    font-size: 28px;
+    color: #f8f8f8;
+    
+    text-align: center;
+    justify-content: center;
+}
